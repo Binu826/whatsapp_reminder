@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="{% static 'css/style4.css' %}">
+</head>
+<body>
+    
+
+    <div class="container">
+        <h2>Profile</h2>
+        <div class="profile-info">
+            <div class="profile-item">
+                
+                <label for="name">Name:{{ mem.name }}</label>
+                <div id="name"></div>
+            </div>
+            <div class="profile-item">
+                <label for="email">Email:{{ mem.email }}</label>
+                <div id="email"></div>
+            </div>
+            <div class="profile-item">
+                <label for="phone">Phone Number:{{mem.phone}}</label>
+                <div id="phone"></div>
+            </div>
+            <div class="profile-item">
+                <label for="company-name">Company Name:{{mem.company_name}}</label>
+                <div id="company-name"></div>
+            </div>
+            <div class="profile-item">
+                <label for="company-type">Company Type:{{mem.company_type}}</label>
+                <div id="company-type"></div>
+            </div>
+            <div class="profile-item">
+                <label for="address">Address:{{mem.address}}</label>
+                <div id="address"></div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

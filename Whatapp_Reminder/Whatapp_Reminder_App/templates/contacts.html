@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Management</title>
+    <link rel="stylesheet" href="{% static 'css/style3.css' %}">
+</head>
+<body>
+
+<div class="final-message">
+    <label for="final-message">Final Message:</label>
+    <textarea id="final-message" name="final-message" rows="4" placeholder="Enter final message..."></textarea>
+</div>
+
+<div class="contact-buttons">
+    <button>Add Contact</button>
+    <button>Delete Contact</button>
+</div>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Country Code</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Repeat the following row for each contact -->
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- Repeat for other contacts -->
+        </tbody>
+    </table>
+</div>
+
+<div class="send-button">
+    <button>Send</button>
+</div>
+
+</body>
+</html>
